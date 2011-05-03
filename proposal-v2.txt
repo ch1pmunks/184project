@@ -1,0 +1,25 @@
+Byoungseok Peter Kim
+cs184-bg
+20190251
+
+Frank Yu Gan
+cs184-ay
+20448257
+
+Camera Modeling
+
+Description:
+
+Our project aims to model a camera lens system with modified raytracing techniques. The raytracer program behind the model send out multiple rays per pixel that are then warped by the lens before reaching the objects. The system will be compared to a raytracer with oversampling but without the lens constructs to see how the camera model changes the generated image.
+
+Challenges:
+
+Lens modeling - We will use spheres to model the different surfaces of a lens. Since each ray passes through the lens in the same order, they must hit the spheres in a specific order, so we can attribute some refractive index to each sphere to calculate the direction of a new ray passing through one surface of a lens. We may try to model multiple types of lens (ie. wide-angle, fisheye, double-Gauss, and telephoto) and compare their effects.
+
+Focal Length - Focal length in cameras is set by moving the different length lens closer or further apart. We will model focal length by doing the same with the spheres used in lens modeling. Depending on the cost of computation, we may either let the use change dynamically change focal length, or simply have fixed focal lengths coded into the program that are relevant to our scene.
+
+Aperture [time permitting] - Our camera model will begin with a fixed aperture. A simple version of changing aperture that only models it's effect on intensity involves using a multiplier to determine the final image intensity. A more complex version would be to calculate the proper angle of the exit pupil due to change in aperture and change the number of rays we send out appropriately.
+
+Notes:
+
+Our project will be built on top of the raytracer from as6. The scene used to demonstrate our camera model will consist of a few texture mapped cubes; the different positions of the cubes will demonstrate how lens types affect the image, and the texture mapping will demonstrate the effects of focal length and aperture on the image.
