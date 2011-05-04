@@ -4,7 +4,7 @@
 Lens::Lens() {
 
 	initializeLens();
-	_apertureRadius = .40;
+	_apertureRadius = .342;
 
 }
 
@@ -79,7 +79,7 @@ bool Lens::traceFirstHalf(Ray & r, Ray & exitRay, vec2 & offset) {
 	return true;
 }
 
-bool refractRay(Ray & r, vec3 normal, double n1, double n2, vec4 pos) {
+bool Lens::refractRay(Ray & r, vec3 normal, double n1, double n2, vec4 pos) {
 
 	normal.normalize();
 	vec3 ray = -1 * vec3(r.direction(), VW);
@@ -109,6 +109,8 @@ bool refractRay(Ray & r, vec3 normal, double n1, double n2, vec4 pos) {
 }
 
 Ray Lens::raytrace(Ray & r) {
+
+
 
 	return Ray();
 }
