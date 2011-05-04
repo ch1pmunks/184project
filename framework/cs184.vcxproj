@@ -87,6 +87,7 @@
     <ClInclude Include="src\BoundingBox.h" />
     <ClInclude Include="src\Film.h" />
     <ClInclude Include="src\global.h" />
+    <ClInclude Include="src\Lens.h" />
     <ClInclude Include="src\main.h" />
     <ClInclude Include="src\Primitives.h" />
     <ClInclude Include="src\Viewport.h" />
@@ -106,6 +107,7 @@
   <ItemGroup>
     <ClCompile Include="src\BoundingBox.cpp" />
     <ClCompile Include="src\Film.cpp" />
+    <ClCompile Include="src\Lens.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Primitives.cpp" />
     <ClCompile Include="src\Viewport.cpp" />

@@ -78,6 +78,9 @@
     <ClInclude Include="src\BoundingBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Lens.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Film.cpp">
@@ -114,6 +117,9 @@
       <Filter>Source Files\UCB</Filter>
     </ClCompile>
     <ClCompile Include="src\BoundingBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lens.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

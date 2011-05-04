@@ -32,6 +32,7 @@ public:
     double intersect(Ray & ray);
     vec4 calculateNormal(vec4 & position);
 	inline MaterialInfo& getMaterial() { return _m; }
+	double getRefractiveIndex() {return _m.k[MAT_KTN];}
 	vec4 getCenter();
 	double getRadius();
 	void getAxisAlignedBounds(vec3 & upperBound, vec3 & lowerBound);
