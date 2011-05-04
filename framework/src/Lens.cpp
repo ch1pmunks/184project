@@ -66,7 +66,16 @@ bool Lens::traceFirstHalf(Ray & r, Ray & exitRay, vec2 & offset) {
 
 	vec4 exitRayPosition(traceray.getPos(t));
 
+	double xoffset = exitRayPosition[VX];
+	double yoffset = exitRayPosition[VY];
+
+	if(xoffset*xoffset + yoffset*yoffset <= _apertureRadius*_apertureRadius)
+		offset = vec2(xoffset,yoffset);
+	else
+		return false;
+
 	exitRay = Ray(exitRayPosition, traceray.direction(), 0);
+
 	return true;
 }
 
